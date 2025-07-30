@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>profile</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+   <a href="home.html" class="logo">
+   <img src="./images/unBlurIcon.png" alt="Unblur Solutions Logo" class="logo-imagem"> Unblur Solutions
+   </a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Procure por cursos..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/user.png" class="image" alt="">
+         <h3 class="name">Mateus Ticami</h3>
+         <p class="role">Desenvolvedor</p>
+         <a href="profile.html" class="btn">Ver perfil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/kibosta.png" class="image" alt="">
+      <h3 class="name">The Magnum</h3>
+      <p class="role">Ice Cream Company</p>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Pagina Principal</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Cursos</span></a>
+      <a href="courses.html"><i class="fas fa-robot"></i><span>Assistente</span></a>
+   </nav>
+
+</div>
+
+<section class="user-profile">
+
+   <h1 class="heading">Seu perfil</h1>
+
+   <div class="info">
+
+      <div class="user">
+         <img src="images/user.png" alt="">
+         <h3>Mateus Ticami</h3>
+         <p>Desenvolvedor</p>
+         <a href="update.html" class="inline-btn">Atualizar perfil</a>
+      </div>
+   
+      <div class="box-container">
+   
+         <div class="box">
+            <div class="flex">
+               <i class="fas fa-bookmark"></i>
+               <div>
+                  <span>4</span>
+                  <p>Playlists Salvas</p>
+               </div>
+            </div>
+            <a href="#" class="inline-btn">Vizualizar Lista</a>
+         </div>
+   
+         <div class="box">
+            <div class="flex">
+               <i class="fas fa-heart"></i>
+               <div>
+                  <span>8</span>
+                  <p>Vídeos Curtidos </p>
+               </div>
+            </div>
+            <a href="#" class="inline-btn">Vizualizar Lista</a>
+         </div>
+   
+         <div class="box">
+            <div class="flex">
+               <i class="fas fa-comment"></i>
+               <div>
+                  <span>3</span>
+                  <p>Comentários em Vídeos</p>
+               </div>
+            </div>
+            <a href="#" class="inline-btn">Vizualizar Comentários</a>
+         </div>
+   
+      </div>
+   </div>
+
+</section>
+
+  <button id="goibot-toggler" class="goibot-toggler" aria-label="Abrir chat">
+    <i class="fas fa-comments"></i>
+  </button>
+
+  <div id="goibot-frame" class="goibot-frame" hidden>
+    <header class="goibot-header">
+      <span>Tire suas duvidas com o KiBOT...</span>
+      <button id="goibot-close" aria-label="Fechar chat">✕</button>
+    </header>
+    <iframe src="https://jwhuzjvrdxgrnfdboq4swpwsdsf.streamlit.app/?embed=true&embed_options=disable_footer"
+      style="width:100%;height:107%;border:0;" loading="lazy" allow="clipboard-write"></iframe>
+  </div>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>   
+</body>
+</html>

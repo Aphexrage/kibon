@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+   <a href="home.html" class="logo">
+   <img src="./images/unBlurIcon.png" alt="Unblur Solutions Logo" class="logo-imagem"> Unblur Solutions
+   </a>
+
+      <div class="icons">
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/kibosta.png" class="image" alt="">
+      <h3 class="name">The Magnum</h3>
+      <p class="role">Ice Cream Company</p>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Pagina Principal</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Cursos</span></a>
+      <a href="courses.html"><i class="fas fa-robot"></i><span>Assistente</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3><i class="fa-solid fa-right-to-bracket"></i> Realizar Login</h3>
+      <p>Seu email <span>*</span></p>
+      <input type="email" name="email" placeholder="Coloque seu email" required maxlength="50" class="box">
+      <p>Sua senha <span>*</span></p>
+      <input type="password" name="pass" placeholder="Coloque sua senha" required maxlength="20" class="box">
+      <input type="submit" value="Entrar" name="submit" class="btn">
+      <input type="submit" value="Solicitar acesso" name="submit" class="btn">
+   </form>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
