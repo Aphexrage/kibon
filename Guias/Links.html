@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rotina Diária do Colaborador</title>
+
+    <!-- Font Awesome CDN link --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="../css/style2.css">
+
+    <link rel="icon" href="../images/favicon.png" type="image">
+
+
+</head>
+
+<body>
+
+ <header class="header">
+   
+   <section class="flex">
+
+   <a href="Ferramentas.html" class="logo">
+   <img src="../images/unBlurIcon.png" alt="Unblur Solutions Logo" class="logo-imagem"> Unblur Solutions
+   </a>
+
+      <form action="../search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Procure por cursos..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="btn" class="fa-solid fa-bell"></div> 
+         <div id="user-btn" class="fas fa-user"></div>
+      </div>
+
+      <div class="profile">
+         <img src="../images/user.png" class="image" alt="">
+         <h3 class="name">Mateus Ticami</h3>
+         <p class="role">Desenvolvedor</p>
+         <a href="../profile.html" class="btn">Ver perfil</a>
+         <div class="flex-btn">
+            <a href="../login.html" class="option-btn">login</a>
+         </div>
+      </div>
+
+   </section>
+
+ </header>   
+
+ <div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="../images/kibon.png" class="image" alt="">
+      <h3 class="name">The Magnum</h3>
+      <p class="role">Ice Cream Company</p>
+   </div>
+
+   <nav class="navbar">
+      <a href="Ferramentas.html"><i class="fa-solid fa-hammer"></i><span>Ferramentas</span></a>
+      <a href="Treinamento.html"><i class="fas fa-graduation-cap"></i><span>Treinamento</span></a>
+      <a href="Links.html"><i class="fa-solid fa-globe"></i><span>Links</span></a>
+   </nav>
+
+ </div>
+
+ <section class="to_do_fixa">
+    <h2><i class="fa-solid fa-list-check"></i> Rotina diária do colaborador</h2>
+    
+ <ul class="todo_checklist">
+    <li>
+        <span>1.Kipontos</span>
+        <a href="https://kipontos.tamojuntokibon.com.br/mural" class="btn" target="_blank">Acessar</a>
+    </li>
+
+    <li>
+        <span>2.Track&Trace</span>
+        <a href="https://ice.ttunilever.com/users/sign_in" class="btn" target="_blank">Acessar</a>
+    </li>
+
+    <li>
+        <span>3.Solicite ATRS</span>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=Aq5v9jZdW0m_4Him_5-OboQVzzCp90VGvSgXxUfdSF1UODNQQ0s1Q0NKMkxUVU9IUzU0UjRSWTVJNy4u&route=shorturl" class="btn" target="_blank">Acessar</a>
+    </li>
+
+    <li>
+        <span>4.Solicitação de Cabinets</span>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=Aq5v9jZdW0m_4Him_5-Obum6XPOV5HpPrCEbLaelw3JUMjRXWVZJSFVaT0o3U01LQVhMUldBVzlDVSQlQCN0PWcu&origin=lprLink" class="btn" target="_blank">Acessar</a>
+    </li>
+ </ul>
+ </section>
+
+<button id="goibot-toggler" class="goibot-toggler" aria-label="Abrir chat">
+    <i class="fas fa-comments"></i>
+  </button>
+
+  <div id="goibot-frame" class="goibot-frame" hidden>
+    <header class="goibot-header">
+      <span>Tire suas duvidas com o KiBOT...</span>
+      <button id="goibot-close" aria-label="Fechar chat">✕</button>
+    </header>
+    <iframe src="https://jwhuzjvrdxgrnfdboq4swpwsdsf.streamlit.app/?embed=true&embed_options=disable_footer"
+      style="width:100%;height:107%;border:0;" loading="lazy" allow="clipboard-write"></iframe>
+  </div>
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+
+
+
+</body>
+</html>
